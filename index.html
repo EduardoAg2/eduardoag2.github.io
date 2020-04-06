@@ -13,6 +13,116 @@
 </head>
 
 <body id="page-top">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-riesgos">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Editor de riesgos</h4><span>&nbsp; &nbsp;<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#modal-listariesgos">Ver listado de riesgos comunes</button></span><button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label>Descripcion breve del riesgo</label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" title="Una descripcion breve del riesgo en menos de 10 palabras."></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label>Tipo de riesgo</label><select class="form-control form-control-sm"><option value="12" selected="">Riesgo tecnico</option><option value="13">Riesgo administrativo</option><option value="14">Riesgo externo</option></select></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label>Proceso que detecta</label><select class="form-control form-control-sm"><option value="12" selected="">Diseño</option><option value="13">Gerencia general</option><option value="14">Ejecucion electrica</option></select></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label>Probabilidad de ocurrencia</label><select class="form-control form-control-sm"><option value="12" selected="">Baja</option><option value="13">Media</option><option value="14">Alta</option></select></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label>Impacto del riesgo</label><select class="form-control form-control-sm"><option value="12" selected="">Bajo</option><option value="13">Medio</option><option value="14">Alto</option></select></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label>Descripcion detallada del riesgo</label><textarea class="form-control" placeholder="Descripcion del riesgo de manera detallada. Si la descripcion breve es suficiente este espacio se puede dejar en blanco."></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label>Causas principales</label><textarea class="form-control" placeholder="Enumere cuales son las causas principales de este riesgo."></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label>Respuesta inicial ante el riesgo</label><textarea class="form-control" placeholder="Escrbir la respuesta inicial en caso de que el riesgo propuesto llegue a suceder."></textarea></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label>Medidas preventivas</label><textarea class="form-control" placeholder="Las medidas de prevencion de este riesgo."></textarea></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Cerrar</button><button class="btn btn-primary" type="button">Guardar</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-listariesgos">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Lista de riesgos comunes</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Riesgo</th>
+                                                    <th class="text-center">Impacto</th>
+                                                    <th class="text-center">Probabilidad&nbsp;</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Limitaciones de tiempo del contratista</td>
+                                                    <td class="text-center">Alto</td>
+                                                    <td class="text-center">Bajo</td>
+                                                    <td class="text-center"><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/check-box.svg" width="20" height="20" title="Agregar el riesgo."></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Experiencia limitada del ingeniero.</td>
+                                                    <td class="text-center">Alto</td>
+                                                    <td class="text-center">Bajo</td>
+                                                    <td class="text-center"><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/check-box.svg" width="20" height="20" title="Agregar el riesgo."></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cambios en diseño arquitectonico, civil, o estructural</td>
+                                                    <td class="text-center">Alto</td>
+                                                    <td class="text-center">Bajo</td>
+                                                    <td class="text-center"><img data-toggle="tooltip" data-bs-tooltip="" src="assets/img/check-box.svg" width="20" height="20" title="Agregar el riesgo."></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+            </div>
+        </div>
+    </div>
     <div id="wrapper">
         <nav class="navbar navbar-light align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">
@@ -72,35 +182,65 @@
                                         </div>
                                         <div class="form-row">
                                             <div class="col">
-                                                <div class="form-group"><label for="first_name"><strong>Fecha de solicitud</strong></label><input class="form-control form-control-sm" type="date"></div>
+                                                <div class="form-group"><label for="first_name"><strong>Fecha de solicitud</strong></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" type="date" title="Fecha en la que se recibe la orden de compra o aprobacion por parte del cliente."></div>
                                             </div>
                                             <div class="col">
-                                                <div class="form-group"><label for="last_name"><strong>Fecha limite para presentar</strong></label><input class="form-control form-control-sm" type="date"></div>
+                                                <div class="form-group"><label for="last_name"><strong>Tipo de aprobacion</strong></label><select class="form-control form-control-sm"><option value="12" selected="">Telefono</option><option value="13">Correo</option><option value="14">Orden compra</option><option value="20">Interno</option></select></div>
                                             </div>
                                             <div class="col">
-                                                <div class="form-group"><label for="last_name"><strong>Fecha de finalizacion aproximada</strong></label><input class="form-control form-control-sm" type="date"></div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group"><label for="first_name"><strong>Criticidad</strong></label><select class="form-control form-control-sm"><option value="12" selected="">Normal</option><option value="13">Emergencia</option></select></div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group"><label for="last_name"><strong>¿Se presento cotizacion?</strong><br></label><select class="form-control form-control-sm"><option value="12" selected="">Si</option><option value="13">No</option></select></div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="form-group"><label for="last_name"><strong>¿Ocupa cronograma?</strong><br></label><select class="form-control form-control-sm"><option value="No" selected="">Si</option><option value="14">No</option></select></div>
+                                                <div class="form-group"><label for="last_name"><strong>Se presento cotizacion</strong><br></label><select class="form-control form-control-sm"><option value="12" selected="">Si</option><option value="13">No</option></select></div>
                                             </div>
                                         </div>
                                         <div class="form-row">
-                                            <div class="col">
-                                                <div class="form-group"><label for="first_name"><strong>Tipo de aprobacion</strong><br></label><select class="form-control form-control-sm"><option value="12" selected="">Telefono</option><option value="13">Correo</option><option value="14">Orden compra</option><option value="20">Interno</option></select></div>
+                                            <div class="col-8">
+                                                <div class="form-group"><label for="first_name"><strong>Direccion electronica</strong><br></label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" name="last_name" title="La direccion de la carpeta en el portal."></div>
                                             </div>
-                                            <div class="col">
-                                                <div class="form-group"><label for="last_name"><strong>Direccion electronica</strong><br></label><input class="form-control form-control-sm" type="text" data-toggle="tooltip" data-bs-tooltip="" name="last_name" title="La direccion de la carpeta en el portal."></div>
-                                            </div>
-                                            <div class="col">
+                                            <div class="col-4">
                                                 <div class="form-group"><label for="last_name"><strong>Estado del proyecto</strong><br></label><select class="form-control form-control-sm"><option value="12" selected="">En proceso</option><option value="13">Completado</option></select></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="text-primary m-0 font-weight-bold">Cronograma de ejecución</p>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label for="first_name"><strong>Fecha de diseño conceptual</strong></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" type="date" title="Fecha en la que se tiene proyectado presentar el diseño conceptual."></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label for="last_name"><strong>Fecha de revisión de primer avance</strong></label><input class="form-control form-control-sm" data-toggle="tooltip" data-bs-tooltip="" type="date" title="Fecha en la que se tiene proyectado presentar el primer avance."></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label for="last_name"><strong>Fecha de revisión final</strong><br></label><input class="form-control" data-toggle="tooltip" data-bs-tooltip="" type="date" title="Fecha en la que se tiene proyectado presentar el diseño final antes de enviar al cliente."></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label for="first_name"><strong>Fecha de entrega</strong><br></label><input class="form-control" data-toggle="tooltip" data-bs-tooltip="" type="date" title="Fecha en la que se tiene que presentar el proyecto al cliente."></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label for="first_name"><strong>Horas ingeniero proyectadas</strong><br></label><input class="form-control" type="number" data-toggle="tooltip" data-bs-tooltip="" title="La cantidad de horas ingeniero incluidas en el presupuesto."></div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-group"><label for="last_name"><strong>Horas dibujante proyectadas</strong><br></label><input class="form-control" type="number" data-toggle="tooltip" data-bs-tooltip="" title="La cantidad de horas dibujante incluidas en el presupuesto."></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-group"><label for="first_name"><strong>Horas ingeniero reales</strong><br></label><input class="form-control" type="text" data-toggle="tooltip" data-bs-tooltip="" readonly="" title="El numero de horas ingeniero que han sido invertidas en el proyecto hasta la fecha."></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group"><label for="first_name"><strong>Horas dibujante reales</strong><br></label><input class="form-control" type="number" data-toggle="tooltip" data-bs-tooltip="" title="El numero de horas dibujante que han sido invertidas en el proyecto hasta la fecha."
+                                                        readonly=""></div>
                                             </div>
                                         </div>
                                     </form>
@@ -378,16 +518,6 @@
                                         <div class="col">
                                             <ul class="list-group">
                                                 <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-5"><label class="custom-control-label" for="formCheck-5">El tiempo de ejecución será un factor importante durante la implementación de este diseño en campo.</label></div>
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="col">
-                                                                <div class="form-group"><textarea class="form-control" rows="4" name="signature" placeholder="Espacio para comentarios."></textarea></div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                                <li class="list-group-item">
                                                     <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-20"><label class="custom-control-label" for="formCheck-20">Se debe considerar crecimiento futuro.</label></div>
                                                     <form>
                                                         <div class="form-row">
@@ -398,27 +528,7 @@
                                                     </form>
                                                 </li>
                                                 <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-21"><label class="custom-control-label" for="formCheck-21">El diseño sufrirá muchas modificaciones en su obra civil o arquitectónica.</label></div>
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="col">
-                                                                <div class="form-group"><textarea class="form-control" rows="4" name="signature" placeholder="Espacio para comentarios. Me parece que esto ya esta considerado en los riesgos."></textarea></div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-22"><label class="custom-control-label" for="formCheck-22">El diseño necesita cumplir con requisitos específicos o códigos de seguridad industrial.</label></div>
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="col">
-                                                                <div class="form-group"><textarea class="form-control" rows="4" name="signature" placeholder="Espacio para comentarios."></textarea></div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-23"><label class="custom-control-label" for="formCheck-23">El cliente tiene experiencia con diseños similares</label></div>
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-23"><label class="custom-control-label" for="formCheck-23">El cliente tiene experiencia con diseños similares o existe una supervision externa que tenga experiencia</label></div>
                                                     <form>
                                                         <div class="form-row">
                                                             <div class="col">
@@ -442,7 +552,7 @@
                                         <div class="col">
                                             <p class="text-primary m-0 font-weight-bold" data-toggle="tooltip" data-bs-tooltip="" title="Se puede hacer click sobre cada riesgo para ver mas detalles del mismo. Esa es la idea.">Matriz de riesgos</p>
                                         </div>
-                                        <div class="col"><button class="btn btn-primary btn-sm float-right" type="button">Agregar riesgos</button></div>
+                                        <div class="col text-danger"><button class="btn btn-primary btn-sm float-right" id="btn-agregar-riesgos" type="button" data-toggle="modal" data-target="#modal-riesgos">Agregar riesgos</button></div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -459,15 +569,15 @@
                                             <tbody>
                                                 <tr>
                                                     <td>Cambios diseño arquitectonico, civil, estructural</td>
-                                                    <td>Alta</td>
-                                                    <td>Bajo</td>
+                                                    <td><span class="badge badge-pill badge-danger">Alta</span></td>
+                                                    <td><span class="badge badge-pill badge-warning">Medio</span></td>
                                                     <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
                                                             width="20" height="20" src="assets/img/x-circle.svg" title="Eliminar"></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Limitaciones tecnicas del contratista</td>
-                                                    <td>Baja</td>
-                                                    <td>Medio</td>
+                                                    <td><span class="badge badge-pill badge-success">Baja</span></td>
+                                                    <td><span class="badge badge-pill badge-danger">Alto</span></td>
                                                     <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
                                                             width="20" height="20" src="assets/img/x-circle.svg" title="Eliminar"></td>
                                                 </tr>
@@ -618,21 +728,28 @@
                                         <div class="col">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-39"><label class="custom-control-label" for="formCheck-39">Permisos ambientales</label></div>
+                                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-bs-tooltip="" title="Proyectar costos de contratar un ingeniero ambiental. Aplicable cuando se tienen que cortar ramas o arboles para una linea de distribucion o transmision."><input class="custom-control-input" type="checkbox" id="formCheck-39"><label class="custom-control-label" for="formCheck-39">Permisos ambientales</label></div>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-40"><label class="custom-control-label" for="formCheck-40">Aprobacion municipal planos</label></div>
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-40"><label class="custom-control-label" for="formCheck-40">Permiso municipal</label></div>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item">
-                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-41"><label class="custom-control-label" for="formCheck-41">Aprobacion planos ENEE</label></div>
+                                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-41"><label class="custom-control-label" for="formCheck-41">Aprobacion ENEE</label></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-bs-tooltip="" title="Permiso para solicitar al INSEP el derecho de via. Aplica para lineas de transmision o distribucion."><input class="custom-control-input" type="checkbox" id="formCheck-43"><label class="custom-control-label" for="formCheck-43">Permiso gubernamental</label></div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -667,7 +784,7 @@
                                         <div class="col">
                                             <p class="text-primary m-0 font-weight-bold">Equipo de trabajo</p>
                                         </div>
-                                        <div class="col"><button class="btn btn-primary btn-sm float-right" type="button">Agregar al equipo de trabajo</button></div>
+                                        <div class="col"><button class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-bs-tooltip="" type="button" title="Personas que estan involucradas en la ejecucion de este diseño. Usualmente solo es el ingeniero lider y el dibujante.">Agregar al equipo de trabajo</button></div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -690,6 +807,65 @@
                                                 <tr>
                                                     <td>Joselyn Amaya</td>
                                                     <td>Dibujante</td>
+                                                    <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
+                                                            width="20" height="20" src="assets/img/x-circle.svg" title="Eiminar"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-4" style="width: 141px;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="text-primary m-0 font-weight-bold">Personal interesado</p>
+                                        </div>
+                                        <div class="col"><button class="btn btn-primary btn-sm float-right" data-toggle="tooltip" data-bs-tooltip="" type="button" title="Personal que debe de ser notificado al momento de aperturar este proyecto.">Agregar al listado de personal interesado</button></div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nombre</th>
+                                                    <th>Unidad</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Carlos Suazo</td>
+                                                    <td>Gerencia general</td>
+                                                    <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
+                                                            width="20" height="20" src="assets/img/x-circle.svg" title="Eliminar"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fernando Galindo</td>
+                                                    <td>Diseño</td>
+                                                    <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
+                                                            width="20" height="20" src="assets/img/x-circle.svg" title="Eiminar"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tania Hernandez</td>
+                                                    <td>Seguridad industrial</td>
+                                                    <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
+                                                            width="20" height="20" src="assets/img/x-circle.svg" title="Eiminar"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Joel Castrillo</td>
+                                                    <td>Contabilidad</td>
+                                                    <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
+                                                            width="20" height="20" src="assets/img/x-circle.svg" title="Eiminar"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Fabiola Romero</td>
+                                                    <td>Seguimiento y satisfacción</td>
                                                     <td class="text-center"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip="" width="20" height="20" src="assets/img/pencil-square.svg" title="Editar"><img class="rounded-circle mr-2" data-toggle="tooltip" data-bs-tooltip=""
                                                             width="20" height="20" src="assets/img/x-circle.svg" title="Eiminar"></td>
                                                 </tr>
@@ -750,18 +926,6 @@
                                                             width="20" height="20" src="assets/img/x-circle.svg" title="Eliminar"></td>
                                                 </tr>
                                             </tbody>
-                                            <tfoot>
-                                                <tr class="table-secondary">
-                                                    <td>Gran total</td>
-                                                    <td class="text-right">123,000.00</td>
-                                                    <td class="text-right">55,000.00</td>
-                                                    <td class="text-right">11,000.00</td>
-                                                    <td class="text-right">6,000.00</td>
-                                                    <td class="text-right">61,000.00</td>
-                                                    <td class="text-right">46.78%</td>
-                                                    <td class="text-right"></td>
-                                                </tr>
-                                            </tfoot>
                                         </table>
                                     </div>
                                 </div>
@@ -778,8 +942,9 @@
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
